@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Distraction Blocker",
+  "version": "1.0",
+  "description": "Block distracting elements on websites",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["src/components/youtube.js"]
+    },
+    {
+      "matches": ["*://*.amazon.com/*"],
+      "js": ["src/components/amazon.js"]
+    }
+  ]
+}

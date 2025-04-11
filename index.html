@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distraction Blocker</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h2>Distraction Blocker</h2>
+    <p>Block distracting elements on:</p>
+    <button id="youtubeToggle">Toggle YouTube Recommendations</button>
+    <button id="amazonToggle">Toggle Amazon Recommendations</button>
+  </div>
+
+  <script>
+    document.getElementById('youtubeToggle').addEventListener('click', function() {
+      // Simple toggle without persistence
+      alert('YouTube recommendations toggle clicked');
+    });
+    
+    document.getElementById('amazonToggle').addEventListener('click', function() {
+      // Simple toggle without persistence
+      alert('Amazon recommendations toggle clicked');
+    });
+  </script>
+</body>
+</html>
