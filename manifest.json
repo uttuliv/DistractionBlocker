@@ -13,7 +13,7 @@
       "js": ["src/components/youtube.js"]
     },
     {
-      "matches": ["*://*.amazon.com/*"],
+      "matches": ["*://*.amazon.com/*", "*://*.amazon.ca/*"],
       "js": ["src/components/amazon.js"]
     }
   ]
