@@ -6,43 +6,45 @@
   <title>Distraction Blocker</title>
   <style>
     body {
-      width: 200px;
-      padding: 10px;
+      width: 250px;
+      padding: 15px;
       font-family: Arial, sans-serif;
     }
-    button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 8px;
-      background-color: #4285f4;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    h2 {
+      color: #4285f4;
+      margin-top: 0;
     }
-    button:hover {
-      background-color: #3367d6;
+    .site-list {
+      margin-top: 10px;
+    }
+    .site {
+      padding: 8px 10px;
+      margin-bottom: 5px;
+      background-color: #f5f5f5;
+      border-left: 4px solid #4285f4;
+      border-radius: 2px;
+    }
+    p {
+      color: #666;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <div id="app">
     <h2>Distraction Blocker</h2>
-    <p>Block distracting elements on:</p>
-    <button id="youtubeToggle">Toggle YouTube Recommendations</button>
-    <button id="amazonToggle">Toggle Amazon Recommendations</button>
-  </div>
-
-  <script>
-    document.getElementById('youtubeToggle').addEventListener('click', function() {
-      // Simple toggle without persistence
-      alert('YouTube recommendations toggle clicked');
-    });
+    <p>Currently blocking distractions on:</p>
     
-    document.getElementById('amazonToggle').addEventListener('click', function() {
-      // Simple toggle without persistence
-      alert('Amazon recommendations toggle clicked');
-    });
-  </script>
+    <div class="site-list">
+      <div class="site">YouTube</div>
+      <div class="site">Amazon</div>
+      <div class="site">Bilibili</div>
+      <div class="site">LinkedIn</div>
+    </div>
+    
+    <p style="margin-top: 15px; font-size: 12px;">
+      Note: The blocker runs automatically when you visit these sites.
+    </p>
+  </div>
 </body>
 </html>

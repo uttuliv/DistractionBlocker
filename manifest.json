@@ -15,6 +15,14 @@
     {
       "matches": ["*://*.amazon.com/*", "*://*.amazon.ca/*"],
       "js": ["src/components/amazon.js"]
+    },
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "js": ["src/components/bilibili.js"]
+    },
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["src/components/linkedin.js"]
     }
   ]
 }

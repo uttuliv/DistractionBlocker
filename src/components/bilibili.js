@@ -1,14 +1,16 @@
-// Function to hide Amazon recommendations
-function hideAmazonRecommendations() {
-  console.log('DistractionBlocker: Running on Amazon page');
+// Function to hide Bilibili recommendations
+function hideBilibiliRecommendations() {
+  console.log('DistractionBlocker: Running on bilibili page');
   
   // Common recommendation selectors
   const recommendationSelectors = [
-    '#nav-main', // Homepage top-navigation menu
-    '#pageContent',//Homepage recommendations
-    '#navFooter', // Footer recommendations
-    '[id*="rhf"]', // Recommendations based on items you search in the main content area
-    '.a-container.octopus-page-style', // Recommendations in the main content area
+    '.bili-header__channel', // homepage header(under searching bar)
+    '.bili-feed4-layout', // homepage recommendations
+    '.header-channel-fixed', //homepage channel bar
+
+    '#slide_ad',// video page ad
+    '.ad-report-inner',// video page ad(after recommendations)
+    '.recommend-list-v1',// video page recommendations
   ];
 
   // Hide each recommendation section
@@ -28,13 +30,13 @@ function hideAmazonRecommendations() {
 }
 
 // Run on page load
-console.log('DistractionBlocker: Amazon script loaded');
-hideAmazonRecommendations();
+console.log('DistractionBlocker: Bilibili script loaded');
+hideBilibiliRecommendations();
 
 // Run when navigation occurs
 const observer = new MutationObserver(() => {
   console.log('DistractionBlocker: Page content changed, checking for new recommendations');
-  hideAmazonRecommendations();
+  hideBilibiliRecommendations();
 });
 
 // Start observing the document with the configured parameters
