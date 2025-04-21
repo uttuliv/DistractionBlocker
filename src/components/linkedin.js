@@ -4,14 +4,9 @@ function hideLinkedInDistractions() {
   
   // Common distraction selectors
   const distractionSelectors = [
-    '.feed-follows-module', // Who to follow
-    '.feed-shared-news-module', // LinkedIn News
-    '.premium-upsell-card', // Premium upsell
     '.ad-banner-container', // Ads
-    '.feed-shared-update-v2--promoted', // Promoted content
-    '.feed-shared-update-v2--sponsored', // Sponsored content
-    '.right-rail', // Right sidebar with recommendations
-    '.feed-right-rail', // Feed right rail
+    '.relative', //homepage recommendations
+    '#feed-news-module',// homepage sidebar LinkedIn News
   ];
 
   // Hide each distracting section
