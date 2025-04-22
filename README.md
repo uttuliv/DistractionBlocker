@@ -40,7 +40,7 @@ DistractionBlocker is designed to eliminate recommendation feeds, advertisements
 ### From Repository
 1. Clone the repository:
    ```
-   git clone 
+   git clone https://github.com/uttuliv/DistractionBlocker.git
    ```
 2. Load the extension in your browser:
    - Chrome: Go to `chrome://extensions/`, enable Developer mode, and click "Load unpacked". Select the cloned project folder.
